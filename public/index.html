@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+        OneSignal.init({
+          appId: "77da4eda-4976-4ec6-a22d-d1b393ea621c",
+          safari_web_id: "",
+          notifyButton: {
+            enable: true,
+          },
+        });
+      });
+    </script>
   </head>
   <body>
     <noscript>

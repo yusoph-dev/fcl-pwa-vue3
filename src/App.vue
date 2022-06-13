@@ -8,11 +8,15 @@
   </div>
 </template>
 <script>
+import OneSignal from "onesignal-vue";
 export default {
   name: "App",
   data: () => ({
     shown: false,
   }),
+  beforeCreate() {
+    this.$OneSignal.showSlidedownPrompt();
+  },
   beforeMount() {
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();

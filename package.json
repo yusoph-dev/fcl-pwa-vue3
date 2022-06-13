@@ -12,6 +12,7 @@
     "@babel/preset-env": "^7.18.2",
     "@onflow/fcl": "^1.0.2",
     "core-js": "^3.22.8",
+    "onesignal-vue": "^1.0.2",
     "queue-microtask": "^1.2.3",
     "register-service-worker": "^1.7.2",
     "vue": "^3.2.13",
